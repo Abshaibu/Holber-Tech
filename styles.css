@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Roboto:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+    color: #2A1B3D;
+    font-size: 1.125em;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 13vh;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px #00000017;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+header nav,
+.logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+a,
+button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    color: #2A1B3D;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #D83F87;
+}
+
+p {
+    font-weight: 400;
+}
+
+a.active {
+    background-color: #D83F87;
+    color: #fff;
+    font-weight: 200;
+    padding: .7em 1.6em;
+    border-radius: 4px;
+}
+
+.send-message:hover,
+.active:hover {
+    background-color: #44318D;
+}
+
+button {
+    background-color: transparent;
+}
+
+.container {
+    width: 90%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-pink {
+    color: #D83F87;
+}
+
+.home {
+    height: 100vh;
+}
+
+.home-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us,
+.process-main,
+.process-flow,
+.tools-holder,
+.service-cards,
+.holber,
+.footer-nav,
+.image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools-holder {
+    width: 64%;
+    align-items: center;
+}
+
+.flow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.process-flow {
+    width: 39%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.process-flow-holder {
+    width: 48%;
+    margin-top: -.7em;
+}
+
+.process-flow-holder p {
+    margin-top: 1em;
+}
+
+.our-services,
+.process-tools h2 {
+    margin-top: 5.5em;
+}
+
+.our-services,
+.tools-used {
+    background-color: #fff;
+}
+
+.our-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tools-used {
+height: 68vh;
+display: flex;
+flex-direction: column;
+margin-top: 3em;
+}
+
+.our-services p {
+    margin-bottom: 0.9em;
+}
+
+h4.color-pink,
+.home-texts .color-pink {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5.3125rem;
+}
+
+.contact-us h1 {
+    margin-top: 1.2em;
+}
+
+.contact-us span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5.3125rem;
+}
+
+.about-us .home-img {
+    padding-top: 2em;
+    margin: 0 auto;
+}
+
+.home h1,
+.contact-us h1 {
+    font-size: 3.81rem;
+    font-weight: 600;
+    font-family: 'Alatsi', sans-serif;
+    line-height: 1.04;
+}
+
+.contact-us h1,
+.process-tools p {
+    margin-bottom: 1em;
+}
+
+.process-tools p {
+    margin-bottom: 3.5em;
+}
+
+.container > p {
+    margin: 4.5em 0 3.5em;
+}
+
+.tools-holder p {
+    padding-top: .7em;
+}
+
+.home h1 {
+    margin-bottom: .5em;
+}
+
+.home-texts {
+    width: 58%;
+}
+
+.contact-us {
+    width: 57%;
+}
+
+.our-services img {
+    width: 100%;
+}
+
+.about-us .home-texts{
+    width: 56%;
+}
+
+.mouse {
+    width: 2%;
+    margin: 0 auto 7.5em;
+}
+
+.contact-us input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.contact-us textarea {
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 89%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+}
+
+.contact-us form div {
+    position: relative;
+}
+
+.contact-us form div label {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    color: #2A1B3D;
+    transition: .5s;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+form div label.message {
+    top: 45px;
+}
+
+.contact-us input:focus~label,
+.contact-us textarea:focus~label,
+.contact-us input:valid~label,
+.contact-us textarea:valid~label {
+    top: -12px;
+    left: 0;
+    color: #D83F87;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus,
+.contact-us input:valid,
+.contact-us textarea:valid {
+    border-bottom: 2px solid #D83F87;
+}
+
+.send-message {
+    background-color: #D83F87;
+    color: #fff;
+    font-weight: 200;
+    padding: .7em 1.6em;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4.color-pink {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer li,
+main h2 {
+    margin-bottom: .8em;
+}
+
+footer nav a {
+    font-weight: 400;
+}
+
+input,
+textarea {
+    background-color: #fcfcfc;
+}
+
+.holber p {
+    color: #8E8E8E !important;
+    font-weight: 300;
+    font-size: 0.9375rem;
+    margin-bottom: 1.4em;
+}
+
+.holber p a {
+    color: #8E8E8E !important;
+    font-weight: 300;
+    font-size: 0.9375rem;
+}
+
+.footer-nav {
+    width: 32%;
+    font-size: 1.0625rem;
+    margin: 7.5em 0 2.2em;
+}
+
+i.color-pink {
+    font-size: 1.3rem;
+    margin-right: .5em;
+}
+
+i:hover {
+    color: #44318D;
+}
