@@ -60,6 +60,12 @@ a:hover {
     color: #D83F87;
 }
 
+a.hover:hover {
+    color: #D83F87;
+    position: relative;
+    top: -.4em;
+}
+
 p {
     font-weight: 400;
 }
@@ -160,10 +166,10 @@ button {
 }
 
 .tools-used {
-height: 68vh;
-display: flex;
-flex-direction: column;
-margin-top: 3em;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
 }
 
 .our-services p {
@@ -207,7 +213,7 @@ h4.color-pink,
     margin-bottom: 3.5em;
 }
 
-.container > p {
+.container>p {
     margin: 4.5em 0 3.5em;
 }
 
@@ -231,7 +237,7 @@ h4.color-pink,
     width: 100%;
 }
 
-.about-us .home-texts{
+.about-us .home-texts {
     width: 56%;
 }
 
@@ -358,4 +364,6 @@ i.color-pink {
 
 i:hover {
     color: #44318D;
+    position: relative;
+    top:  -.3em;
 }
